@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72F6EA3D1F7208C600F23863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA3C1F7208C600F23863 /* AppDelegate.swift */; };
+		72F6EA3F1F7208C600F23863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA3E1F7208C600F23863 /* ViewController.swift */; };
+		72F6EA421F7208C600F23863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6EA401F7208C600F23863 /* Main.storyboard */; };
+		72F6EA441F7208C600F23863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F6EA431F7208C600F23863 /* Assets.xcassets */; };
+		72F6EA471F7208C600F23863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6EA451F7208C600F23863 /* LaunchScreen.storyboard */; };
+		72F6EA521F7208C600F23863 /* FuturamaCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA511F7208C600F23863 /* FuturamaCharactersTests.swift */; };
+		72F6EA5D1F7208C600F23863 /* FuturamaCharactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA5C1F7208C600F23863 /* FuturamaCharactersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72F6EA4E1F7208C600F23863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72F6EA311F7208C600F23863 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72F6EA381F7208C600F23863;
+			remoteInfo = FuturamaCharacters;
+		};
+		72F6EA591F7208C600F23863 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72F6EA311F7208C600F23863 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72F6EA381F7208C600F23863;
+			remoteInfo = FuturamaCharacters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		72F6EA391F7208C600F23863 /* FuturamaCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuturamaCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F6EA3C1F7208C600F23863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72F6EA3E1F7208C600F23863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72F6EA411F7208C600F23863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72F6EA431F7208C600F23863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72F6EA461F7208C600F23863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72F6EA481F7208C600F23863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F6EA4D1F7208C600F23863 /* FuturamaCharactersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuturamaCharactersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F6EA511F7208C600F23863 /* FuturamaCharactersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturamaCharactersTests.swift; sourceTree = "<group>"; };
+		72F6EA531F7208C600F23863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F6EA581F7208C600F23863 /* FuturamaCharactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuturamaCharactersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72F6EA5C1F7208C600F23863 /* FuturamaCharactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturamaCharactersUITests.swift; sourceTree = "<group>"; };
+		72F6EA5E1F7208C600F23863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72F6EA361F7208C600F23863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F6EA4A1F7208C600F23863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F6EA551F7208C600F23863 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72F6EA301F7208C600F23863 = {
+			isa = PBXGroup;
+			children = (
+				72F6EA3B1F7208C600F23863 /* FuturamaCharacters */,
+				72F6EA501F7208C600F23863 /* FuturamaCharactersTests */,
+				72F6EA5B1F7208C600F23863 /* FuturamaCharactersUITests */,
+				72F6EA3A1F7208C600F23863 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72F6EA3A1F7208C600F23863 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72F6EA391F7208C600F23863 /* FuturamaCharacters.app */,
+				72F6EA4D1F7208C600F23863 /* FuturamaCharactersTests.xctest */,
+				72F6EA581F7208C600F23863 /* FuturamaCharactersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72F6EA3B1F7208C600F23863 /* FuturamaCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				72F6EA3C1F7208C600F23863 /* AppDelegate.swift */,
+				72F6EA3E1F7208C600F23863 /* ViewController.swift */,
+				72F6EA401F7208C600F23863 /* Main.storyboard */,
+				72F6EA431F7208C600F23863 /* Assets.xcassets */,
+				72F6EA451F7208C600F23863 /* LaunchScreen.storyboard */,
+				72F6EA481F7208C600F23863 /* Info.plist */,
+			);
+			path = FuturamaCharacters;
+			sourceTree = "<group>";
+		};
+		72F6EA501F7208C600F23863 /* FuturamaCharactersTests */ = {
+			isa = PBXGroup;
+			children = (
+				72F6EA511F7208C600F23863 /* FuturamaCharactersTests.swift */,
+				72F6EA531F7208C600F23863 /* Info.plist */,
+			);
+			path = FuturamaCharactersTests;
+			sourceTree = "<group>";
+		};
+		72F6EA5B1F7208C600F23863 /* FuturamaCharactersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				72F6EA5C1F7208C600F23863 /* FuturamaCharactersUITests.swift */,
+				72F6EA5E1F7208C600F23863 /* Info.plist */,
+			);
+			path = FuturamaCharactersUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72F6EA381F7208C600F23863 /* FuturamaCharacters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F6EA611F7208C600F23863 /* Build configuration list for PBXNativeTarget "FuturamaCharacters" */;
+			buildPhases = (
+				72F6EA351F7208C600F23863 /* Sources */,
+				72F6EA361F7208C600F23863 /* Frameworks */,
+				72F6EA371F7208C600F23863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuturamaCharacters;
+			productName = FuturamaCharacters;
+			productReference = 72F6EA391F7208C600F23863 /* FuturamaCharacters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72F6EA4C1F7208C600F23863 /* FuturamaCharactersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F6EA641F7208C600F23863 /* Build configuration list for PBXNativeTarget "FuturamaCharactersTests" */;
+			buildPhases = (
+				72F6EA491F7208C600F23863 /* Sources */,
+				72F6EA4A1F7208C600F23863 /* Frameworks */,
+				72F6EA4B1F7208C600F23863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72F6EA4F1F7208C600F23863 /* PBXTargetDependency */,
+			);
+			name = FuturamaCharactersTests;
+			productName = FuturamaCharactersTests;
+			productReference = 72F6EA4D1F7208C600F23863 /* FuturamaCharactersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		72F6EA571F7208C600F23863 /* FuturamaCharactersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72F6EA671F7208C600F23863 /* Build configuration list for PBXNativeTarget "FuturamaCharactersUITests" */;
+			buildPhases = (
+				72F6EA541F7208C600F23863 /* Sources */,
+				72F6EA551F7208C600F23863 /* Frameworks */,
+				72F6EA561F7208C600F23863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72F6EA5A1F7208C600F23863 /* PBXTargetDependency */,
+			);
+			name = FuturamaCharactersUITests;
+			productName = FuturamaCharactersUITests;
+			productReference = 72F6EA581F7208C600F23863 /* FuturamaCharactersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72F6EA311F7208C600F23863 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Steven Vlaminck";
+				TargetAttributes = {
+					72F6EA381F7208C600F23863 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					72F6EA4C1F7208C600F23863 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 72F6EA381F7208C600F23863;
+					};
+					72F6EA571F7208C600F23863 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 72F6EA381F7208C600F23863;
+					};
+				};
+			};
+			buildConfigurationList = 72F6EA341F7208C600F23863 /* Build configuration list for PBXProject "FuturamaCharacters" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72F6EA301F7208C600F23863;
+			productRefGroup = 72F6EA3A1F7208C600F23863 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72F6EA381F7208C600F23863 /* FuturamaCharacters */,
+				72F6EA4C1F7208C600F23863 /* FuturamaCharactersTests */,
+				72F6EA571F7208C600F23863 /* FuturamaCharactersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72F6EA371F7208C600F23863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F6EA471F7208C600F23863 /* LaunchScreen.storyboard in Resources */,
+				72F6EA441F7208C600F23863 /* Assets.xcassets in Resources */,
+				72F6EA421F7208C600F23863 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F6EA4B1F7208C600F23863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F6EA561F7208C600F23863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72F6EA351F7208C600F23863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F6EA3F1F7208C600F23863 /* ViewController.swift in Sources */,
+				72F6EA3D1F7208C600F23863 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F6EA491F7208C600F23863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F6EA521F7208C600F23863 /* FuturamaCharactersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F6EA541F7208C600F23863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F6EA5D1F7208C600F23863 /* FuturamaCharactersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72F6EA4F1F7208C600F23863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72F6EA381F7208C600F23863 /* FuturamaCharacters */;
+			targetProxy = 72F6EA4E1F7208C600F23863 /* PBXContainerItemProxy */;
+		};
+		72F6EA5A1F7208C600F23863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72F6EA381F7208C600F23863 /* FuturamaCharacters */;
+			targetProxy = 72F6EA591F7208C600F23863 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72F6EA401F7208C600F23863 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72F6EA411F7208C600F23863 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72F6EA451F7208C600F23863 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72F6EA461F7208C600F23863 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72F6EA5F1F7208C600F23863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72F6EA601F7208C600F23863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72F6EA621F7208C600F23863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH9RC75QX4;
+				INFOPLIST_FILE = FuturamaCharacters/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.FuturamaCharacters;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72F6EA631F7208C600F23863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH9RC75QX4;
+				INFOPLIST_FILE = FuturamaCharacters/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.FuturamaCharacters;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72F6EA651F7208C600F23863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH9RC75QX4;
+				INFOPLIST_FILE = FuturamaCharactersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.FuturamaCharactersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuturamaCharacters.app/FuturamaCharacters";
+			};
+			name = Debug;
+		};
+		72F6EA661F7208C600F23863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH9RC75QX4;
+				INFOPLIST_FILE = FuturamaCharactersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.FuturamaCharactersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuturamaCharacters.app/FuturamaCharacters";
+			};
+			name = Release;
+		};
+		72F6EA681F7208C600F23863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH9RC75QX4;
+				INFOPLIST_FILE = FuturamaCharactersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.FuturamaCharactersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FuturamaCharacters;
+			};
+			name = Debug;
+		};
+		72F6EA691F7208C600F23863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DH9RC75QX4;
+				INFOPLIST_FILE = FuturamaCharactersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftMN.FuturamaCharactersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FuturamaCharacters;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72F6EA341F7208C600F23863 /* Build configuration list for PBXProject "FuturamaCharacters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F6EA5F1F7208C600F23863 /* Debug */,
+				72F6EA601F7208C600F23863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F6EA611F7208C600F23863 /* Build configuration list for PBXNativeTarget "FuturamaCharacters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F6EA621F7208C600F23863 /* Debug */,
+				72F6EA631F7208C600F23863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F6EA641F7208C600F23863 /* Build configuration list for PBXNativeTarget "FuturamaCharactersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F6EA651F7208C600F23863 /* Debug */,
+				72F6EA661F7208C600F23863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72F6EA671F7208C600F23863 /* Build configuration list for PBXNativeTarget "FuturamaCharactersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F6EA681F7208C600F23863 /* Debug */,
+				72F6EA691F7208C600F23863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72F6EA311F7208C600F23863 /* Project object */;
+}
