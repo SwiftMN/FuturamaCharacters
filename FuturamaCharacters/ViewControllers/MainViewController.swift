@@ -79,7 +79,7 @@ extension MainViewController: UIViewControllerTransitioningDelegate {
         return transition
     }
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return nil
+        return transition
     }
 }
 

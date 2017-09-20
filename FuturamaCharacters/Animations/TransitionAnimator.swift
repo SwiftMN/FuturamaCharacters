@@ -18,12 +18,26 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         return duration
     }
     
+    func isPresenting(transitionContext: UIViewControllerContextTransitioning) -> Bool {
+        return transitionContext.viewController(forKey: .from) is MainViewController
+    }
+    
+    func viewController<T>(from transitionContext: UIViewControllerContextTransitioning) -> T? {
+        if let fromVC = transitionContext.viewController(forKey: .from) as? T {
+            return fromVC
+        }
+        if let toVC = transitionContext.viewController(forKey: .to) as? T {
+            return toVC
+        }
+        return nil
+    }
+    
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         // Make sure we have everything we need
         guard
-            let mainVC: MainViewController = transitionContext.viewController(forKey: .from) as? MainViewController,
-            let detailVC: DetailViewController = transitionContext.viewController(forKey: .to) as? DetailViewController,
+            let mainVC: MainViewController = viewController(from: transitionContext),
+            let detailVC: DetailViewController = viewController(from: transitionContext),
             let detailView = detailVC.view,
             let mainView = mainVC.view,
             let nameLabel = mainVC.nameLabelCopy(),
@@ -34,6 +48,7 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             return
         }
         
+        let presenting = isPresenting(transitionContext: transitionContext)
         let containerView = transitionContext.containerView
         containerView.addSubview(mainView)
         containerView.addSubview(detailView)
@@ -41,16 +56,16 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         // create a view to represent the selected cell
         let cell = UIView(frame: .zero)
         cell.backgroundColor = .white
-        cell.frame = cellFrame
+        cell.frame = presenting ? cellFrame : detailView.frame
         containerView.addSubview(cell)
         containerView.bringSubview(toFront: cell)
         
         // position title before animating
-        nameLabel.frame = nameLabelFrame
+        nameLabel.frame = presenting ? nameLabelFrame : detailVC.nameLabel.frame
         cell.addSubview(nameLabel)
         
         // position image before animating
-        imageView.frame = imageViewFrame
+        imageView.frame = presenting ? imageViewFrame : detailVC.imageView.frame
         cell.addSubview(imageView)
         
         // make the actual detailView trasparent so we can still see the main view during the animation
@@ -58,10 +73,10 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         UIView.animate(withDuration: duration, animations: {
             
-            cell.frame = detailView.frame
-            nameLabel.frame = detailVC.nameLabel.frame
-            imageView.frame = detailVC.imageView.frame
-            
+            cell.frame = presenting ? detailView.frame : self.cellFrame
+            nameLabel.frame = presenting ? detailVC.nameLabel.frame : nameLabelFrame
+            imageView.frame = presenting ? detailVC.imageView.frame : imageViewFrame
+
         }, completion: { _ in
             
             detailView.alpha = 1
