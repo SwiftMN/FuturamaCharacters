@@ -71,8 +71,15 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         // make the actual detailView trasparent so we can still see the main view during the animation
         detailView.alpha = 0
         
+        // add a blur effect to the main view as we transition
+        let effectView = UIVisualEffectView(frame: mainView.frame)
+        effectView.effect = UIBlurEffect(style: UIBlurEffectStyle.prominent)
+        effectView.alpha = presenting ? 0 : 1
+        mainView.addSubview(effectView)
+
         UIView.animate(withDuration: duration, animations: {
             
+            effectView.alpha = presenting ? 1 : 0
             cell.frame = presenting ? detailView.frame : self.cellFrame
             nameLabel.frame = presenting ? detailVC.nameLabel.frame : nameLabelFrame
             imageView.frame = presenting ? detailVC.imageView.frame : imageViewFrame
@@ -84,7 +91,8 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             cell.removeFromSuperview()
             nameLabel.removeFromSuperview()
             imageView.removeFromSuperview()
-            
+            effectView.removeFromSuperview()
+
             transitionContext.completeTransition(true)
         })
     }
