@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		72F6EA3D1F7208C600F23863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA3C1F7208C600F23863 /* AppDelegate.swift */; };
-		72F6EA3F1F7208C600F23863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA3E1F7208C600F23863 /* ViewController.swift */; };
 		72F6EA421F7208C600F23863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6EA401F7208C600F23863 /* Main.storyboard */; };
 		72F6EA441F7208C600F23863 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F6EA431F7208C600F23863 /* Assets.xcassets */; };
 		72F6EA471F7208C600F23863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6EA451F7208C600F23863 /* LaunchScreen.storyboard */; };
 		72F6EA521F7208C600F23863 /* FuturamaCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA511F7208C600F23863 /* FuturamaCharactersTests.swift */; };
 		72F6EA5D1F7208C600F23863 /* FuturamaCharactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA5C1F7208C600F23863 /* FuturamaCharactersUITests.swift */; };
+		72F6EA711F7209E700F23863 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA6F1F72097B00F23863 /* MainViewController.swift */; };
+		72F6EA721F7209E900F23863 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA701F72097B00F23863 /* DetailViewController.swift */; };
+		72F6EA731F7209F000F23863 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA6D1F72094F00F23863 /* Character.swift */; };
+		72F6EA741F720AC400F23863 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6EA6E1F72096C00F23863 /* Detail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		72F6EA391F7208C600F23863 /* FuturamaCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuturamaCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F6EA3C1F7208C600F23863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72F6EA3E1F7208C600F23863 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72F6EA411F7208C600F23863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72F6EA431F7208C600F23863 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F6EA461F7208C600F23863 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		72F6EA581F7208C600F23863 /* FuturamaCharactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuturamaCharactersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F6EA5C1F7208C600F23863 /* FuturamaCharactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturamaCharactersUITests.swift; sourceTree = "<group>"; };
 		72F6EA5E1F7208C600F23863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F6EA6D1F72094F00F23863 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		72F6EA6E1F72096C00F23863 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		72F6EA6F1F72097B00F23863 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		72F6EA701F72097B00F23863 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,10 @@
 		72F6EA3B1F7208C600F23863 /* FuturamaCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				72F6EA6C1F7208F700F23863 /* ViewControllers */,
+				72F6EA6B1F7208E700F23863 /* Storyboards */,
+				72F6EA6A1F7208D400F23863 /* Model */,
 				72F6EA3C1F7208C600F23863 /* AppDelegate.swift */,
-				72F6EA3E1F7208C600F23863 /* ViewController.swift */,
-				72F6EA401F7208C600F23863 /* Main.storyboard */,
 				72F6EA431F7208C600F23863 /* Assets.xcassets */,
 				72F6EA451F7208C600F23863 /* LaunchScreen.storyboard */,
 				72F6EA481F7208C600F23863 /* Info.plist */,
@@ -123,6 +130,32 @@
 				72F6EA5E1F7208C600F23863 /* Info.plist */,
 			);
 			path = FuturamaCharactersUITests;
+			sourceTree = "<group>";
+		};
+		72F6EA6A1F7208D400F23863 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72F6EA6D1F72094F00F23863 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72F6EA6B1F7208E700F23863 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				72F6EA401F7208C600F23863 /* Main.storyboard */,
+				72F6EA6E1F72096C00F23863 /* Detail.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		72F6EA6C1F7208F700F23863 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				72F6EA6F1F72097B00F23863 /* MainViewController.swift */,
+				72F6EA701F72097B00F23863 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +268,7 @@
 				72F6EA471F7208C600F23863 /* LaunchScreen.storyboard in Resources */,
 				72F6EA441F7208C600F23863 /* Assets.xcassets in Resources */,
 				72F6EA421F7208C600F23863 /* Main.storyboard in Resources */,
+				72F6EA741F720AC400F23863 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F6EA3F1F7208C600F23863 /* ViewController.swift in Sources */,
+				72F6EA721F7209E900F23863 /* DetailViewController.swift in Sources */,
 				72F6EA3D1F7208C600F23863 /* AppDelegate.swift in Sources */,
+				72F6EA711F7209E700F23863 /* MainViewController.swift in Sources */,
+				72F6EA731F7209F000F23863 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
