@@ -17,6 +17,7 @@
 		72F6EA721F7209E900F23863 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA701F72097B00F23863 /* DetailViewController.swift */; };
 		72F6EA731F7209F000F23863 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA6D1F72094F00F23863 /* Character.swift */; };
 		72F6EA741F720AC400F23863 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F6EA6E1F72096C00F23863 /* Detail.storyboard */; };
+		72F6EA771F720BF400F23863 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F6EA761F720BF400F23863 /* TransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		72F6EA6E1F72096C00F23863 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		72F6EA6F1F72097B00F23863 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		72F6EA701F72097B00F23863 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		72F6EA761F720BF400F23863 /* TransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		72F6EA3B1F7208C600F23863 /* FuturamaCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				72F6EA751F720BBC00F23863 /* Animations */,
 				72F6EA6C1F7208F700F23863 /* ViewControllers */,
 				72F6EA6B1F7208E700F23863 /* Storyboards */,
 				72F6EA6A1F7208D400F23863 /* Model */,
@@ -156,6 +159,14 @@
 				72F6EA701F72097B00F23863 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		72F6EA751F720BBC00F23863 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				72F6EA761F720BF400F23863 /* TransitionAnimator.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 			files = (
 				72F6EA721F7209E900F23863 /* DetailViewController.swift in Sources */,
 				72F6EA3D1F7208C600F23863 /* AppDelegate.swift in Sources */,
+				72F6EA771F720BF400F23863 /* TransitionAnimator.swift in Sources */,
 				72F6EA711F7209E700F23863 /* MainViewController.swift in Sources */,
 				72F6EA731F7209F000F23863 /* Character.swift in Sources */,
 			);

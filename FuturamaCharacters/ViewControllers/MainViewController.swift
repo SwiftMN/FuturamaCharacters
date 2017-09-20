@@ -11,7 +11,8 @@ import UIKit
 class MainViewController: UIViewController {
     
     private let cellIdentifier = "dataObjectCell"
-    private(set) var selectedIndexPath = IndexPath()
+    private var selectedIndexPath = IndexPath()
+    private let transition = TransitionAnimator()
 
     var characters: [Character] = []
 
@@ -67,7 +68,18 @@ extension MainViewController: UITableViewDelegate {
             return
         }
         detail.characters = characters[indexPath.row]
+        detail.transitioningDelegate = self
+        transition.cellFrame = tableView.convert(tableView.rectForRow(at: indexPath), to: nil)
         present(detail, animated: true)
+    }
+}
+
+extension MainViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return transition
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return nil
     }
 }
 
