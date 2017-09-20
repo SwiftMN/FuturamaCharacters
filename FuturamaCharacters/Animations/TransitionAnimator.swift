@@ -95,5 +95,14 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
             transitionContext.completeTransition(true)
         })
+        
+        let descriptionLabel = detailVC.descriptionLabel.createCopy()
+        descriptionLabel.frame = detailVC.descriptionLabel.frame
+        descriptionLabel.alpha = presenting ? 0 : 1
+        cell.addSubview(descriptionLabel)
+        
+        UIView.animate(withDuration: 0.25, delay: presenting ? 0.75 : 0, options: [], animations: {
+            descriptionLabel.alpha = presenting ? 1 : 0
+        })
     }
 }
