@@ -44,8 +44,8 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             let nameLabelFrame = mainVC.nameLabelFrame(),
             let imageView = mainVC.imageViewCopy(),
             let imageViewFrame = mainVC.imageViewFrame()
-        else {
-            return
+            else {
+                return
         }
         
         let presenting = isPresenting(transitionContext: transitionContext)
@@ -76,33 +76,39 @@ class TransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         effectView.effect = UIBlurEffect(style: UIBlurEffectStyle.prominent)
         effectView.alpha = presenting ? 0 : 1
         mainView.addSubview(effectView)
-
-        UIView.animate(withDuration: duration, animations: {
+        
+        // add the description label to be faded in and out
+        let descriptionLabel = detailVC.descriptionLabel.createCopy()
+        descriptionLabel.frame = detailVC.descriptionLabel.frame
+        descriptionLabel.alpha = presenting ? 0 : 1
+        cell.addSubview(descriptionLabel)
+        
+        // animate the cell, label, and image independently of the description label
+        UIView.animateKeyframes(withDuration: duration, delay: 0, options: [], animations: {
             
-            effectView.alpha = presenting ? 1 : 0
-            cell.frame = presenting ? detailView.frame : self.cellFrame
-            nameLabel.frame = presenting ? detailVC.nameLabel.frame : nameLabelFrame
-            imageView.frame = presenting ? detailVC.imageView.frame : imageViewFrame
-
+            // animate between the cell and the detail view
+            UIView.addKeyframe(withRelativeStartTime: presenting ? 0 : 0.25, relativeDuration: 0.75, animations: {
+                effectView.alpha = presenting ? 1 : 0
+                cell.frame = presenting ? detailView.frame : self.cellFrame
+                nameLabel.frame = presenting ? detailVC.nameLabel.frame : nameLabelFrame
+                imageView.frame = presenting ? detailVC.imageView.frame : imageViewFrame
+                
+            })
+            
+            // fade the description label in and out
+            UIView.addKeyframe(withRelativeStartTime: presenting ? 0.75 : 0, relativeDuration: 0.25, animations: {
+                descriptionLabel.alpha = presenting ? 1 : 0
+            })
+            
         }, completion: { _ in
-            
             detailView.alpha = 1
             
             cell.removeFromSuperview()
             nameLabel.removeFromSuperview()
             imageView.removeFromSuperview()
             effectView.removeFromSuperview()
-
+            
             transitionContext.completeTransition(true)
-        })
-        
-        let descriptionLabel = detailVC.descriptionLabel.createCopy()
-        descriptionLabel.frame = detailVC.descriptionLabel.frame
-        descriptionLabel.alpha = presenting ? 0 : 1
-        cell.addSubview(descriptionLabel)
-        
-        UIView.animate(withDuration: 0.25, delay: presenting ? 0.75 : 0, options: [], animations: {
-            descriptionLabel.alpha = presenting ? 1 : 0
         })
     }
 }
